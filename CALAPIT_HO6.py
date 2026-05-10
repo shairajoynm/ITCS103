@@ -27,9 +27,9 @@ def fave():
 
     print("\n===== FAVORITE PEOPLE LISTS =====\n")
     wb_read = op.load_workbook("favorite_people.xlsx")
-    ws_read = workbook_read.active
+    ws_read = wb_read.active
 
-    for row in worksheet_read.iter_rows(values_only=True):
+    for row in ws_read.iter_rows(values_only=True):
         print(row)
     
     input("Please, press Enter to exit the program......")
