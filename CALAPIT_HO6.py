@@ -26,8 +26,8 @@ def fave():
     print("\nFavorite people added successfully!")
 
     print("\n===== FAVORITE PEOPLE LISTS =====\n")
-    workbook_read = op.load_workbook("favorite_people.xlsx")
-    worksheet_read = workbook_read.active
+    wb_read = op.load_workbook("favorite_people.xlsx")
+    ws_read = workbook_read.active
 
     for row in worksheet_read.iter_rows(values_only=True):
         print(row)
